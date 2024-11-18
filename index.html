@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Venue Map</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    svg {
+      width: 90%;
+      height: auto;
+      margin: 20px 0;
+    }
+    rect:hover {
+      fill: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Interactive Venue Map</h1>
+<label for="date-picker">Select a Date:</label>
+<input type="date" id="date-picker"/>
+
+<svg id="venue-map" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1190.55 841.89">
+  <rect class="st0" id="Hall_Module_N1" x="1044.6" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N1</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N2" x="997.32" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N2</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N3" x="950.03" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N3</title>
+  </rect>
+ <rect class="st0" id="Hall_Module_N4" x="902.75" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N4</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N5" x="855.47" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N5</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N6" x="808.19" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N6</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N7" x="760.91" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N7</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N8" x="713.62" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N8</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N9" x="666.34" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N9</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N10" x="619.06" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N10</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N11" x="571.78" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N11</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N12" x="524.5" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N12</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N13" x="477.21" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N13</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N14" x="429.93" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N14</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N15" x="382.65" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N15</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N16" x="335.37" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N16</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N17" x="288.09" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N17</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N18" x="240.8" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N18</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N19" x="193.52" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N19</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N20" x="146.24" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N20</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N21" x="98.96" y="284.61" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module N21</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_N22" x="75.32" y="284.61" width="23.64" height="102.76" fill="blue">
+    <title>Hall Module N22</title>
+  </rect>
+
+  <!-- Southern Halls -->
+  <rect class="st0" id="Hall_Module_S1" x="1044.6" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S1</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S2" x="997.32" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S2</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S3" x="950.03" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S3</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S4" x="902.75" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S4</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S5" x="855.47" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S5</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S6" x="808.19" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S6</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S7" x="760.91" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S7</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S8" x="713.62" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S8</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S9" x="666.34" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S9</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S10" x="619.06" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S10</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S11" x="571.78" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S11</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S12" x="524.5" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S12</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S13" x="477.21" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S13</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S14" x="429.93" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S14</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S15" x="382.65" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S15</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S16" x="335.37" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S16</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S17" x="288.09" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S17</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S18" x="240.8" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S18</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S19" x="193.52" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S19</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S20" x="146.24" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S20</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S21" x="98.96" y="454.52" width="47.28" height="102.76" fill="blue">
+    <title>Hall Module S21</title>
+  </rect>
+  <rect class="st0" id="Hall_Module_S22" x="75.32" y="454.52" width="23.64" height="102.76" fill="blue">
+    <title>Hall Module S22</title>
+  </rect>
+</svg>
+
+<script>
+  // Mapping space names to SVG IDs
+  const hallMappings = {
+    // North Halls
+    "Hall Module N1": "Hall_Module_N1",
+    "Hall Module N2": "Hall_Module_N2",
+    "Hall Module N3": "Hall_Module_N3",
+    "Hall Module N4": "Hall_Module_N4",
+    "Hall Module N5": "Hall_Module_N5",
+    "Hall Module N6": "Hall_Module_N6",
+    "Hall Module N7": "Hall_Module_N7",
+    "Hall Module N8": "Hall_Module_N8",
+    "Hall Module N9": "Hall_Module_N9",
+    "Hall Module N10": "Hall_Module_N10",
+    "Hall Module N11": "Hall_Module_N11",
+    "Hall Module N12": "Hall_Module_N12",
+    "Hall Module N13": "Hall_Module_N13",
+    "Hall Module N14": "Hall_Module_N14",
+    "Hall Module N15": "Hall_Module_N15",
+    "Hall Module N16": "Hall_Module_N16",
+    "Hall Module N17": "Hall_Module_N17",
+    "Hall Module N18": "Hall_Module_N18",
+    "Hall Module N19": "Hall_Module_N19",
+    "Hall Module N20": "Hall_Module_N20",
+    "Hall Module N21": "Hall_Module_N21",
+    "Hall Module N22": "Hall_Module_N22",
+
+    // South Halls
+    "Hall Module S1": "Hall_Module_S1",
+    "Hall Module S2": "Hall_Module_S2",
+    "Hall Module S3": "Hall_Module_S3",
+    "Hall Module S4": "Hall_Module_S4",
+    "Hall Module S5": "Hall_Module_S5",
+    "Hall Module S6": "Hall_Module_S6",
+    "Hall Module S7": "Hall_Module_S7",
+    "Hall Module S8": "Hall_Module_S8",
+    "Hall Module S9": "Hall_Module_S9",
+    "Hall Module S10": "Hall_Module_S10",
+    "Hall Module S11": "Hall_Module_S11",
+    "Hall Module S12": "Hall_Module_S12",
+    "Hall Module S13": "Hall_Module_S13",
+    "Hall Module S14": "Hall_Module_S14",
+    "Hall Module S15": "Hall_Module_S15",
+    "Hall Module S16": "Hall_Module_S16",
+    "Hall Module S17": "Hall_Module_S17",
+    "Hall Module S18": "Hall_Module_S18",
+    "Hall Module S19": "Hall_Module_S19",
+    "Hall Module S20": "Hall_Module_S20",
+    "Hall Module S21": "Hall_Module_S21",
+    "Hall Module S22": "Hall_Module_S22"
+  };
+
+  let bookingData = [];
+
+  // Normalize date format (if needed)
+  const normalizeDate = (dateStr) => {
+    if (dateStr.includes('/')) {
+      const [month, day, year] = dateStr.split('/');
+      return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+    }
+    return dateStr; // Already normalized
+  };
+
+  // Load booking data from Google Sheets
+  const googleSheetUrl =
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRg9sLtpzSssZroA9t1yx3i-3xOkUyl5OU4GDbK7ebjCIDS-fjKnXHJ2vIiAAKKGVrCUWS-Nginywbj/pub?output=csv";
+
+  Papa.parse(googleSheetUrl, {
+    download: true,
+    header: true,
+    complete: (results) => {
+      bookingData = results.data.map((row) => ({
+        space: row["Space"],
+        startDate: new Date(normalizeDate(row["Start Date"])),
+        endDate: new Date(normalizeDate(row["End Date"]))
+      }));
+      console.log("Data loaded from Google Sheets:", bookingData);
+    }
+  });
+
+  // Add event listener to the date picker
+  document.getElementById("date-picker").addEventListener("change", (event) => {
+    const selectedDate = new Date(event.target.value);
+    console.log("Selected Date:", selectedDate);
+
+    // Reset all halls to default color
+    Object.values(hallMappings).forEach((hallId) => {
+      const hall = document.getElementById(hallId);
+      if (hall) {
+        hall.setAttribute("fill", "blue");
+      }
+    });
+
+    // Highlight halls in use on the selected date
+    bookingData.forEach((booking) => {
+      const { space, startDate, endDate } = booking;
+      console.log(`Checking hall: ${space}, Start: ${startDate}, End: ${endDate}`);
+      if (selectedDate >= startDate && selectedDate <= endDate) {
+        const hallId = hallMappings[space];
+        console.log(`Match found for ${space}, Hall ID: ${hallId}`);
+        if (hallId) {
+          const hall = document.getElementById(hallId);
+          if (hall) {
+            hall.setAttribute("fill", "green");
+          }
+        }
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
